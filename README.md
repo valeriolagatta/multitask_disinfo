@@ -4,6 +4,9 @@ This repository contains the code for the paper "From Single-Task to Multi-Task:
 
 Please cite accordingly:
 
+
+
+```bibtex
 @article{LAGATTA2024121735,
 title = {From Single-Task to Multi-Task: Unveiling the Dynamics of Knowledge Transfers in Disinformation Detection},
 journal = {Information Sciences},
@@ -15,3 +18,4 @@ url = {https://www.sciencedirect.com/science/article/pii/S0020025524016499},
 author = {Valerio {La Gatta} and Giancarlo Sperlì and Luigi {De Cegli} and Vincenzo Moscato},
 keywords = {Disinformation mining, Knowledge transfer, Explainable AI}
 }
+```
