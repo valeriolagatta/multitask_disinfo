@@ -1,0 +1,86 @@
+s:
+  data_format: PremiseOnly
+  dropout_p: 0.3
+  enable_san: false
+  labels:
+  - negative
+  - positive
+  metric_meta:
+  - F1MAC
+  - F1
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class:  2
+  split_names:
+  - train
+  - dev
+  - test
+  task_type: Classification
+fnd:
+  data_format: PremiseOnly
+  dropout_p: 0.3
+  enable_san: false
+  labels:
+  - _true
+  - _false
+  - _unverified
+  metric_meta:
+  - F1MAC
+  - F1
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class:  3
+  split_names:
+  - train
+  - dev
+  - test
+  task_type: Classification
+sqdc:
+  data_format: PremiseAndOneHypothesis
+  dropout_p: 0.3
+  enable_san: false 
+  labels:
+  - support
+  - query
+  - deny
+  - comment
+  metric_meta:
+  - F1MAC
+  - F1
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 4
+  split_names:
+  - train
+  - dev
+  - test
+  task_type: Classification  
+htiee:
+  data_format: PremiseOnly
+  dropout_p: 0.3
+  enable_san: false 
+  labels:
+  - health-care
+  - taxes
+  - immigration
+  - elections
+  - education
+  metric_meta:
+  - F1MAC
+  - F1
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 5
+  split_names:
+  - train
+  - dev
+  - test
+  task_type: Classification
